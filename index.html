@@ -3,71 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shoe Store</title>
+  <title>Jordan Shoes - Impossible Kicks</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.6;
+      padding: 0;
+    }
+
     header {
       background-color: #333;
-      color: white;
-      padding: 15px 0;
+      color: #f60;
+      padding: 20px 0;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
+
+    header h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-top: 10px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
     .container {
       display: flex;
       justify-content: center;
-      margin-top: 30px;
+      margin: 50px 0;
+      flex-wrap: wrap;
     }
+
     .shoe {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin: 0 15px;
-      overflow: hidden;
-      width: 250px;
+      background-color: #222;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      margin: 20px;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .shoe:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
     .shoe img {
       width: 100%;
       height: auto;
+      border-radius: 10px 10px 0 0;
+      transition: transform 0.5s ease;
     }
+
+    .shoe:hover img {
+      transform: scale(1.1);
+    }
+
     .shoe-info {
-      padding: 15px;
+      padding: 20px;
       text-align: center;
     }
+
     .shoe-info h3 {
-      margin: 10px 0;
-      color: #333;
-    }
-    .shoe-info p {
-      color: #777;
-    }
-    .shoe-info .price {
+      font-size: 1.8rem;
       color: #f60;
-      font-weight: bold;
-      font-size: 1.2em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
     }
+
+    .shoe-info p {
+      color: #ddd;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      color: #ff0;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
     .button {
       background-color: #f60;
       color: white;
-      padding: 10px;
+      padding: 10px 20px;
       border: none;
-      border-radius: 5px;
+      border-radius: 30px;
+      font-size: 1.2rem;
       cursor: pointer;
       text-transform: uppercase;
+      transition: background-color 0.3s ease;
     }
+
     .button:hover {
-      background-color: #d45500;
+      background-color: #e55b00;
     }
+
+    .quote-section {
+      margin: 50px 0;
+      text-align: center;
+      padding: 40px;
+      background-color: #222;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .quote-section h2 {
+      color: #f60;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .quote {
+      font-size: 1.3rem;
+      color: #bbb;
+      font-style: italic;
+      animation: fadeIn 4s ease-in-out;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background-color: #333;
-      color: white;
-      margin-top: 40px;
+      color: #fff;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
@@ -75,49 +164,33 @@
 
   <!-- Header -->
   <header>
-    <h1>Shoe Store</h1>
-    <p>Your perfect pair of shoes awaits</p>
+    <h1>Impossible Kicks - Jordan Shoes</h1>
+    <p>Unleash the Champion in You</p>
   </header>
 
-  <!-- Main content -->
+  <!-- Product Section -->
   <div class="container">
-    <!-- Shoe 1 -->
+    <!-- Shoe 1 (Jordan) -->
     <div class="shoe">
-      <img src="https://via.placeholder.com/250x250.png?text=Shoe+1" alt="Shoe 1">
+      <img src="https://impossiblekicks.com/cdn/shop/products/Untitled-13copy_38178364-bf5d-47f6-a3a3-694c6c6abfa1_1946x.jpg" alt="Jordan Shoe">
       <div class="shoe-info">
-        <h3>Running Shoe</h3>
-        <p>Comfortable and stylish for your runs.</p>
-        <p class="price">$69.99</p>
-        <button class="button">Buy Now</button>
-      </div>
-    </div>
-
-    <!-- Shoe 2 -->
-    <div class="shoe">
-      <img src="https://via.placeholder.com/250x250.png?text=Shoe+2" alt="Shoe 2">
-      <div class="shoe-info">
-        <h3>Casual Sneaker</h3>
-        <p>Perfect for everyday wear.</p>
-        <p class="price">$49.99</p>
-        <button class="button">Buy Now</button>
-      </div>
-    </div>
-
-    <!-- Shoe 3 -->
-    <div class="shoe">
-      <img src="https://via.placeholder.com/250x250.png?text=Shoe+3" alt="Shoe 3">
-      <div class="shoe-info">
-        <h3>Sports Shoes</h3>
-        <p>Durable and designed for performance.</p>
-        <p class="price">$89.99</p>
+        <h3>Air Jordan 1 Retro</h3>
+        <p>Classic design, iconic legacy. These kicks are made for those who dare to be great.</p>
+        <p class="price">$169.99</p>
         <button class="button">Buy Now</button>
       </div>
     </div>
   </div>
 
+  <!-- Motivational Quote Section -->
+  <div class="quote-section">
+    <h2>“Success is no accident. It is hard work, perseverance, learning, studying, sacrifice, and most of all, love of what you are doing or learning to do.”</h2>
+    <p class="quote">- Pele, Legendary Athlete</p>
+  </div>
+
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Shoe Store | All Rights Reserved</p>
+    <p>&copy; 2025 Impossible Kicks | All Rights Reserved</p>
   </footer>
 
 </body>
