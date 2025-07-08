@@ -1,10 +1,124 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoe Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .shoe {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 0 15px;
+      overflow: hidden;
+      width: 250px;
+    }
+    .shoe img {
+      width: 100%;
+      height: auto;
+    }
+    .shoe-info {
+      padding: 15px;
+      text-align: center;
+    }
+    .shoe-info h3 {
+      margin: 10px 0;
+      color: #333;
+    }
+    .shoe-info p {
+      color: #777;
+    }
+    .shoe-info .price {
+      color: #f60;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .button {
+      background-color: #f60;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    .button:hover {
+      background-color: #d45500;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
+
+  <!-- Header -->
+  <header>
+    <h1>Shoe Store</h1>
+    <p>Your perfect pair of shoes awaits</p>
+  </header>
+
+  <!-- Main content -->
+  <div class="container">
+    <!-- Shoe 1 -->
+    <div class="shoe">
+      <img src="https://via.placeholder.com/250x250.png?text=Shoe+1" alt="Shoe 1">
+      <div class="shoe-info">
+        <h3>Running Shoe</h3>
+        <p>Comfortable and stylish for your runs.</p>
+        <p class="price">$69.99</p>
+        <button class="button">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Shoe 2 -->
+    <div class="shoe">
+      <img src="https://via.placeholder.com/250x250.png?text=Shoe+2" alt="Shoe 2">
+      <div class="shoe-info">
+        <h3>Casual Sneaker</h3>
+        <p>Perfect for everyday wear.</p>
+        <p class="price">$49.99</p>
+        <button class="button">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Shoe 3 -->
+    <div class="shoe">
+      <img src="https://via.placeholder.com/250x250.png?text=Shoe+3" alt="Shoe 3">
+      <div class="shoe-info">
+        <h3>Sports Shoes</h3>
+        <p>Durable and designed for performance.</p>
+        <p class="price">$89.99</p>
+        <button class="button">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shoe Store | All Rights Reserved</p>
+  </footer>
+
 </body>
 </html>
